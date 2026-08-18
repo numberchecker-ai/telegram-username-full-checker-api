@@ -1,0 +1,60 @@
+{
+  "name": "Telegram Username Full Checker API",
+  "brand": "NumberChecker",
+  "repository": "numberchecker-ai/telegram-username-full-checker-api",
+  "description": "Asynchronous bulk Telegram username detail verification API for NumberChecker.",
+  "official_site": "https://numberchecker.ai",
+  "landing_page": "https://numberchecker.ai/products/telegram-username-full-checker",
+  "canonical_docs": "https://docs.numberchecker.ai/telegram-username-full-checker",
+  "base_url": "https://api.numberchecker.ai",
+  "auth": {
+    "type": "api_key",
+    "header": "X-API-Key"
+  },
+  "mode": "async",
+  "endpoints": {
+    "create_task": {
+      "method": "POST",
+      "path": "/v1/tasks"
+    },
+    "get_task": {
+      "method": "POST",
+      "path": "/v1/gettasks"
+    },
+    "balance": {
+      "method": "GET",
+      "path": "/v1/balance"
+    }
+  },
+  "input": {
+    "format": "text",
+    "one_per_line": true,
+    "input_kind": "username"
+  },
+  "products": [
+    {
+      "type": "tg_username_full",
+      "name": "Full Checker",
+      "min": 1000,
+      "max": 10000000,
+      "fields": [
+        "username",
+        "activated",
+        "nickname",
+        "avatar",
+        "gender",
+        "age",
+        "skin_color",
+        "user_id",
+        "active_days",
+        "is_vip",
+        "is_frozen"
+      ],
+      "fields_note": "Verified against live sample; full profile, activity, VIP, and frozen fields are now confirmed."
+    }
+  ],
+  "pricing_url": "https://numberchecker.ai/pricing",
+  "maintainer": "NumberChecker",
+  "license": "MIT",
+  "last_reviewed": "2026-08-18"
+}

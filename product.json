@@ -4,28 +4,15 @@
   "repository": "numberchecker-ai/telegram-username-full-checker-api",
   "description": "Asynchronous bulk Telegram username detail verification API for NumberChecker.",
   "official_site": "https://numberchecker.ai",
-  "landing_page": "https://numberchecker.ai/products/telegram-username-full-checker",
-  "canonical_docs": "https://docs.numberchecker.ai/telegram-username-full-checker",
+  "landing_page": null,
+  "canonical_docs": null,
   "base_url": "https://api.numberchecker.ai",
   "auth": {
     "type": "api_key",
     "header": "X-API-Key"
   },
   "mode": "async",
-  "endpoints": {
-    "create_task": {
-      "method": "POST",
-      "path": "/v1/tasks"
-    },
-    "get_task": {
-      "method": "POST",
-      "path": "/v1/gettasks"
-    },
-    "balance": {
-      "method": "GET",
-      "path": "/v1/balance"
-    }
-  },
+  "endpoints": {},
   "input": {
     "format": "text",
     "one_per_line": true,
@@ -50,11 +37,14 @@
         "is_vip",
         "is_frozen"
       ],
-      "fields_note": "Verified against live sample; full profile, activity, VIP, and frozen fields are now confirmed."
+      "fields_note": "Historical field list; not a current integration contract.",
+      "status": "retired"
     }
   ],
   "pricing_url": "https://numberchecker.ai/pricing",
   "maintainer": "NumberChecker",
   "license": "MIT",
-  "last_reviewed": "2026-08-18"
+  "last_reviewed": "2026-10-30",
+  "status": "retired",
+  "retired_reason": "tg_username_full is retired and no longer accepts new tasks. Review the current Telegram Username/Profile products before choosing a supported task_type."
 }
